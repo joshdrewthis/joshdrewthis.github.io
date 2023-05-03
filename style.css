@@ -16,7 +16,7 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #96B1FF;
+  --color-bg: #231F20;
   --color-text-main: #FFFFFF;
   --color-primary: #FFFF00;
   --wrapper-height: 87vh;
@@ -35,20 +35,16 @@ to this section's matching END comment to see page-specific styles.
   display: none !important;
 }
 
-/* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
-}
+
 
 /*unsure what the unknown is?*/
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
@@ -69,34 +65,8 @@ ul{
   font-family: Manrope;
 }
 
-/* Our remix on glitch button */
-.btn--remix {
-  font-family: HK Grotesk;
-  padding: 0.75rem 1rem;
-  font-size: 1.1rem;
-  line-height: 1rem;
-  font-weight: 500;
-  height: 2.75rem;
-  align-items: center;
-  cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #000;
-  white-space: nowrap;
-  margin-left: auto;
-}
-.btn--remix img {
-  margin-right: 0.5rem;
-}
-.btn--remix:hover {
-  background-color: #D0FFF1;
-}
-
 /* Navigation grid */
-.footer {
+.footer{
   display: flex;
   justify-content: space-between;
   margin: 1rem auto 0;
@@ -106,16 +76,6 @@ ul{
   border-top: 4px solid #fff;
 }
 
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: #000;
-  text-decoration: none;
-  border-style: none;
-}
 .footer a:hover {
   background: var(--color-primary);
 }
@@ -133,8 +93,8 @@ END Glitch hello-app default styles
 ******************************************************************************/
 
 body {
-  font-family: HK Grotesk;
-  background-color: var(--color-bg);
+  font-family: Manrope;
+  background-color: #FFFFFF;
 }
 
 /* Page structure */
@@ -152,15 +112,6 @@ body {
 }
 
 /* Very light scaling for our illustration */
-.title {
-  color: #2800FF;
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 100px;
-  line-height: 105%;
-  margin: 0;
-}
 
 /* Very light scaling for our illustration */
 .illustration {
@@ -188,8 +139,17 @@ input {
 }
 
 /* Subheading */
+h1 {
+  color: #231F20;
+}
 h2 {
-  color: #2800FF;
+  color: #231F20;
+}
+ul {
+  color: #231F20;
+}
+p {
+  color: #231F20;
 }
 
 /* Interactive image */
